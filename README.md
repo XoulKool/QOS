@@ -15,4 +15,21 @@ What this test does is implements bandwidth control using flow-queueing.  The 't
 
 To start, activate both server python files on server5 and server7.  That is run command
 
-``
+`python PServer1.py`
+
+on server5 and 
+
+`python PServer2.py`
+
+on server6
+
+Then on the grnlntrn terminal run
+
+`ryu-manager --verbose qos13.py`
+
+Once the terminal sas it has entered main mode, activate parclient.py on server7 by running
+
+`python parclient.py`
+
+Now we can analyze what goes on by running wireshark as a background process on the servers which are getting information.
+
