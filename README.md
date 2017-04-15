@@ -4,7 +4,7 @@ Here we implement control with Ryu using a Quality-of-Service(QOS) technique
 Much like the previous two tests, we will be using five terminals at a time.  The Pica8 OVS terminal, grnlntrn, and servers5-7.  
 Again, before starting this test be sure to delete flow table entries using the command specified prior.  
 
-##This test uses OpenFlow 1.3
+## This test uses OpenFlow 1.3
 So, be sure to use the command 
 
 `ovs-vsctl set Bridge br0 protocols=OpenFlow13`
